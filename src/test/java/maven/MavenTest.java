@@ -22,5 +22,6 @@ public class MavenTest {
 		driver.get("https://www.google.com/");
 		Reporter.log(driver.getCurrentUrl(), true);
 		Reporter.log(driver.getTitle(), true);
+		driver.close();
   }
 }
