@@ -15,12 +15,12 @@ public class MavenTest {
 	
 	
   @Test
-  public void f() {
+  public void tesone() {
 	  WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("https://www.google.com/");
-		Reporter.log(driver.getCurrentUrl());
-		Reporter.log(driver.getTitle());
+		Reporter.log(driver.getCurrentUrl(), true);
+		Reporter.log(driver.getTitle(), true);
   }
 }
